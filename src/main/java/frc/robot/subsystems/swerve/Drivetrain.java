@@ -1,11 +1,14 @@
-package frc.robot.swerve;
+package frc.robot.subsystems.swerve;
 
 import frc.lib.swerve.SwerveConfigs;
 
+import com.ctre.phoenix6.hardware.Pigeon2;
 import com.ctre.phoenix6.mechanisms.swerve.SwerveDrivetrain;
 import com.ctre.phoenix6.mechanisms.swerve.SwerveRequest;
 import com.ctre.phoenix6.mechanisms.swerve.SwerveModule.DriveRequestType;
 
+import edu.wpi.first.math.kinematics.SwerveDriveKinematics;
+import edu.wpi.first.math.kinematics.SwerveDriveOdometry;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
@@ -24,8 +27,16 @@ public class Drivetrain extends SubsystemBase {
 
     private final CommandXboxController m_Driver = new CommandXboxController(0);
 
+    /*private final SwerveDriveKinematics m_Kine;
+    private final SwerveDriveOdometry m_Odom;
+
+    private final Pigeon2 m_Gyro;
+
+    */
+
     public Drivetrain() {
         /* wow so empty */
+       // m_Kine = new SwerveDriveKinematics(null)
     }
 
     public void movementRequestorSwerve(double xSpeed, double ySpeed, double rotRate) {
