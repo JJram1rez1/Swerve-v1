@@ -19,7 +19,7 @@ import com.ctre.phoenix6.mechanisms.swerve.SwerveModuleConstantsFactory;
 public class SwerveConfigs {
 
     private static final double kSlipCurrentA = 150.00;
-    private static final double kSpeedAt12VoltsMPS = 5.41; // Robots max speed in metric units
+    public static final double kSpeedAt12VoltsMPS = 5.41; // Robots max speed in metric units
     private static final double kCoupleRatio = 0; // Every 1 Rotation of the Azimuth gear in this many drive motor turns // need to tune this again??
     private static final double kDriveGearRatio = 5.9;
     private static final double kSteerGearRatio = 7;

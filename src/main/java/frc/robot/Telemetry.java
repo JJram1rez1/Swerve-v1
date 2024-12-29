@@ -54,6 +54,7 @@ public class Telemetry {
         new Mechanism2d(1, 1),
     };
 
+    /** Contains logic for drive motor speeds */
     private final MechanismLigament2d[] m_ModuleSpeeds = new MechanismLigament2d[] {
         m_ModuleMechanisms[0].getRoot("Back Left Root Speed", 0.5, 0.5).append(new MechanismLigament2d("Back Left Speed", 0.5, 0)),
         m_ModuleMechanisms[1].getRoot("Front Left Root Speed", 0.5, 0.5).append(new MechanismLigament2d("Front Left Speed", 0.5, 0)),
